@@ -27,4 +27,11 @@ def rearrange_even_odd(seq):
     else:
         return rearrange_even_odd(seq[1:]) + [seq[0]]
 
-Penjelasan: 
+Penjelasan: Fungsi rearrange_even_odd(seq):
+
+Fungsi ini digunakan untuk mengatur ulang urutan bilangan bulat dalam sebuah urutan seq sehingga semua nilai genap muncul sebelum semua nilai ganjil.
+Pertama, fungsi memeriksa apakah urutan seq sudah kosong. Jika sudah kosong, maka urutan sudah diatur ulang sesuai dengan kriteria.
+Jika tidak kosong, fungsi memeriksa apakah elemen pertama dari urutan adalah bilangan genap (dengan memeriksa apakah modulus 2 dari elemen tersebut adalah 0). Jika genap, maka elemen tersebut ditempatkan di depan hasil rekursif.
+Jika elemen pertama adalah ganjil, maka elemen tersebut ditempatkan di belakang hasil rekursif.
+Fungsi ini terus memanggil dirinya sendiri untuk mengatur ulang elemen-elemen dalam urutan hingga seluruh urutan terurut sesuai dengan kriteria yang diinginkan.
+Dengan menggunakan kedua fungsi ini, Anda dapat dengan mudah memeriksa apakah sebuah string adalah palindrom dan mengatur ulang urutan bilangan bulat sesuai kebutuhan Anda dalam pemrograman Python.
