@@ -1,0 +1,3 @@
+Soal
+C-4.17 Write a short recursive Python function that determines if a string s is a palindrome, that is, it is equal to its reverse. For example, 'racecar' and 'gohangasalamiimalasagnahog' are palindromes.
+C-4.19 Write a short recursive Python function that rearranges a sequence of in- teger values so that all the even values appear before all the odd values.
