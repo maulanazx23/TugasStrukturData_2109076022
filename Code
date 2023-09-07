@@ -1,0 +1,30 @@
+Jawaban:
+
+(1)
+def is_palindrome(s):
+    s = s.lower()
+    if len(s) <= 1:
+        return True
+    elif s[0] != s[-1]:
+        return False
+    else:
+        return is_palindrome(s[1:-1])
+
+Penjelasan: Fungsi is_palindrome(s):
+
+Fungsi ini digunakan untuk mengecek apakah sebuah string s adalah palindrom atau tidak.
+Pertama, fungsi mengonversi string menjadi huruf kecil agar tidak memperhatikan perbedaan huruf besar dan kecil.
+Selanjutnya, fungsi memeriksa apakah panjang string s sudah kurang dari atau sama dengan 1. Jika iya, maka itu adalah palindrom (karena string dengan panjang 0 atau 1 selalu palindrom).
+Jika tidak, fungsi memeriksa apakah karakter pertama dan karakter terakhir string s sama. Jika sama, maka fungsi akan memanggil dirinya sendiri untuk memeriksa sisa bagian tengah string.
+Proses ini berlanjut hingga seluruh string diperiksa. Jika semua karakter cocok, maka string adalah palindrom, dan jika ada setidaknya satu pasangan karakter yang tidak cocok, maka bukan palindrom.
+
+(2)
+def rearrange_even_odd(seq):
+    if not seq:
+        return []
+    elif seq[0] % 2 == 0:
+        return [seq[0]] + rearrange_even_odd(seq[1:])
+    else:
+        return rearrange_even_odd(seq[1:]) + [seq[0]]
+
+Penjelasan: 
