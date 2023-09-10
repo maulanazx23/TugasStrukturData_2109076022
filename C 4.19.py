@@ -1,0 +1,15 @@
+def rearrange_even_odd(arr):
+    if len(arr) <= 1:
+        return arr
+
+    first_element = arr[0]
+    rest_elements = arr[1:]
+
+    if first_element % 2 == 0:
+        return [first_element] + rearrange_even_odd(rest_elements)
+    else:
+        return rearrange_even_odd(rest_elements) + [first_element]
+
+input_list = [3, 1, 9, 2, 8, 5, 4, 7, 6, 10]
+result = rearrange_even_odd(input_list)
+print("Urutan setelah diatur ulang:", result)
